@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head> 
+<body>
+    <form method="post" action="appointment/">
+    <div class="all">
+        <div class="form">
+            {% csrf_token %}
+            <h1 class="text">Make an appointment</h1>
+            <input class="name" name="name" value="Ivan" placeholder=" Name" type="text">
+            <input class="email" name="email" value="mail@gmail.com" placeholder=" Email" type="email"> <br>
+            <input class="phone" name="phone" value="+7912425215" placeholder=" Phone Number" type="tel">
+            <input class="service" name="service" value="another service" placeholder=" Select Service" type="text"> <br>
+            <textarea class="about" name="about" placeholder=" Tell us about the car needing service(s)" type="text"></textarea>
+            <div class="button">
+                <input type="submit" value="⠀⠀⠀MAKE AN APPOINTMENT" class="block">
+                    <p class="appointment">MAKE AN APPOINTMENT</p>
+                        </svg>   
+                    </input>
+                
+                    
+            </div>
+        </div>
+        <div class="other">
+        <p class="maxime">Maxime placeat facere possimus omnis </p>
+        <h1 class="seven">17k</h1>
+        <p class="custom">customers served (and counting)</p>
+    </div>
+    </div>
+</form>
+</body>
+</html>
